@@ -6,6 +6,36 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
+    path: 
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: d870d657850b76741961ab3bf1ff4dcd
+  - enabled: 1
+    path: Assets/Scenes/_Red.unity
+    guid: 431592ccc79ed97428f2a43e324f57f4
+  - enabled: 1
+    path: Assets/Scenes/_Orange.unity
+    guid: 372db0eae9137264fb39fa17f13731f6
+  - enabled: 1
+    path: Assets/Scenes/_Yellow.unity
+    guid: d4fb806c646d87e4296c865aba2f2305
+  - enabled: 1
+    path: Assets/Scenes/_Green.unity
+    guid: 5508c108277bd634d8b0c6aca91bc9ab
+  - enabled: 1
+    path: Assets/Scenes/_Blue.unity
+    guid: a2cc2d1607e7f4545900216be3d90cd9
+  - enabled: 1
+    path: Assets/Scenes/_Purple.unity
+    guid: 6091d957b2f46c84584a70ac3e1e8508
+  - enabled: 1
+    path: Assets/Scenes/_White.unity
+    guid: 5ee54bc6ba51fd94c9c8a2de003afa40
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: c7141214710ebf14fa1b48fb3702e6c0
+  - enabled: 1
+    path: Assets/Scenes/Movie.unity
+    guid: 61b481b62fae578409453ec1bf782fa8
   m_configObjects: {}

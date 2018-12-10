@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class ShovelLogic : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public Sprite dirtPile;
+    public GameObject chara;
+
+    //on trigger have dig animation and random pick loot
+    private void OnTriggerEnter(Collider other)
+    {
+        
+    }
+
+    private int RandomLoot()    //0 = nothing; 1 = light refill; 2 = shovel; 3 = gem; 4 = heart refill
+    {
+        int temp = Random.Range(0, 5);
+        return temp;
+
+    }
 }

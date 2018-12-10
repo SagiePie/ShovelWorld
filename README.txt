@@ -18,6 +18,7 @@ Menu has chapter select of each color (all unlocked in advanced)
 Tilemap was supposed to be randomly generated, but Unity failed to comply complete random generation
     Random generated loot under each star point 
 
+Graphics created in Corel Painter 2019
     
 
 -------- RESOURCES ---------
