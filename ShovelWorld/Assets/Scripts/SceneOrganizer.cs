@@ -8,39 +8,53 @@ public class SceneOrganizer : MonoBehaviour {
     public void StartGame()
     {
         SceneManager.LoadScene(9);
+        while (Time.timeSinceLevelLoad < 10)
+        {
+            if (Time.timeSinceLevelLoad > 5)
+                Initiate.Fade("_Red", Color.black, 1.0f);
+        }
     }
 
     public void RedScene()
     {
-        SceneManager.LoadScene(1);
+        Initiate.Fade("_Red", Color.black, 1.0f);
+        //SceneManager.LoadScene(1);
     }
 
     public void OrangeScene()
     {
-        SceneManager.LoadScene(2);
+        Initiate.Fade("_Orange", Color.red, 1.0f);
+        //SceneManager.LoadScene(2);
     }
 
     public void YellowScene()
     {
-        SceneManager.LoadScene(3);
+        Color temp = new Color(155f, 140f, 0f);
+        Initiate.Fade("_Yellow", temp, 1.0f);
+        //SceneManager.LoadScene(3);
     }
 
     public void GreenScene()
     {
-        SceneManager.LoadScene(4);
+        Initiate.Fade("_Green", Color.yellow, 1.0f);
+        //SceneManager.LoadScene(4);
     }
     public void BlueScene()
     {
-        SceneManager.LoadScene(5);
+        Initiate.Fade("_Blue", Color.green, 1.0f);
+        //SceneManager.LoadScene(5);
     }
 
     public void PurpleScene()
     {
-        SceneManager.LoadScene(6);
+        Initiate.Fade("_Purple", Color.blue, 1.0f);
+        //SceneManager.LoadScene(6);
     }
 
     public void WhiteScene()
     {
+        Color temp = new Color(86f, 4f, 110f);
+        Initiate.Fade("_White", temp, 1.0f);
         SceneManager.LoadScene(7);
     }
 

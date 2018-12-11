@@ -9,9 +9,17 @@ public class Chara : MonoBehaviour {
     private void FixedUpdate()
     {
         //character movement with wasd
-        var x = Input.GetAxis("Horizontal") * Time.deltaTime * 3.0f;
-        var y = Input.GetAxis("Vertical") * Time.deltaTime * 3.0f;
-
-        transform.Translate(x, y, 0);
+        if(Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            var x = Input.GetAxis("Horizontal") * Time.deltaTime * 3.0f;
+            var y = Input.GetAxis("Vertical") * Time.deltaTime * 3.0f;
+            transform.Translate(x, y, 0);
+        }
+       else
+        {
+            var x = Input.GetAxis("Horizontal") * Time.deltaTime * 1.0f;
+            var y = Input.GetAxis("Vertical") * Time.deltaTime * 1.0f;
+            transform.Translate(x, y, 0);
+        }
     }
 }
