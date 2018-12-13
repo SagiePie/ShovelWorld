@@ -24,6 +24,7 @@ Graphics created in Corel Painter 2019
 lighting for tilemaps
 [shift] for run does not work
 A* troubleshooting having more than one mob (gives errors otherwise)
+star logic to trigger
 
 -------- RESOURCES ---------
 Random Tile Generation

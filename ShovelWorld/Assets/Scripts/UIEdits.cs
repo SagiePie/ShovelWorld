@@ -14,11 +14,11 @@ public class UIEdits : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        
+        //update icons by time
     }
 
     void HeartsCheck()
     {
-
+        
     }
 }
