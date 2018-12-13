@@ -21,6 +21,9 @@ Tilemap was supposed to be randomly generated, but Unity failed to comply comple
 Graphics created in Corel Painter 2019
     
 -------- TROUBLESHOOTING ---------
+lighting for tilemaps
+[shift] for run does not work
+A* troubleshooting having more than one mob (gives errors otherwise)
 
 -------- RESOURCES ---------
 Random Tile Generation
@@ -42,4 +45,5 @@ Scene Transition
     https://assetstore.unity.com/packages/tools/particles-effects/simple-fade-scene-transition-system-81753
 
 Sound
-    blahhh
+    http://soundbible.com/
+    https://www.bensound.com

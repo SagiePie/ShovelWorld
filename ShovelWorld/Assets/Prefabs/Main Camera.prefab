@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 81980803455744456}
   - component: {fileID: 114944384428262162}
   - component: {fileID: 114513519827019894}
+  - component: {fileID: 114701430893199864}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -101,6 +102,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3ab76f9ba05ebe4faff35e4361b3b1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114701430893199864
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1052575447768812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5f07c3e569dc74191f2f48d12b9484, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: music
+    clip: {fileID: 8300000, guid: 56285bf8f84821e4997abab04b09bf6e, type: 3}
+    volumne: 0.63
+    pitch: 1
+    source: {fileID: 0}
+  - name: walking
+    clip: {fileID: 8300000, guid: 1d3fd7114b9900f47b9e8329e6b43680, type: 3}
+    volumne: 3
+    pitch: 1
+    source: {fileID: 0}
+  - name: ghostie
+    clip: {fileID: 8300000, guid: 5a23e35145d2f7e4285f925fd1295be3, type: 3}
+    volumne: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: hurt
+    clip: {fileID: 8300000, guid: d3f23c5e807ddec4cbcd4860bb5c7388, type: 3}
+    volumne: 0
+    pitch: 0
+    source: {fileID: 0}
 --- !u!114 &114944384428262162
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -234,6 +234,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1895146541293160, guid: bc5cfa70563e56c4ca433ba447bc81cb,
     type: 2}
   m_PrefabInternal: {fileID: 786149914}
+--- !u!1 &557769105 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1430321762501646, guid: 37514f7511ced944fb3a21a37500e805,
+    type: 2}
+  m_PrefabInternal: {fileID: 841000826}
 --- !u!1001 &701024388
 Prefab:
   m_ObjectHideFlags: 0
@@ -278,7 +283,8 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 449865148}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114513519827019894, guid: bb614a057e9bdea4ca1b78163c3c4b31, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: bb614a057e9bdea4ca1b78163c3c4b31, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &786149914
@@ -320,22 +326,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114750428207567136, guid: bc5cfa70563e56c4ca433ba447bc81cb,
+        type: 2}
+      propertyPath: boundary
+      value: 
+      objectReference: {fileID: 557769105}
     - target: {fileID: 114285613974188202, guid: bc5cfa70563e56c4ca433ba447bc81cb,
         type: 2}
       propertyPath: tilemap
       value: 
       objectReference: {fileID: 1944061404}
-    - target: {fileID: 114750428207567136, guid: bc5cfa70563e56c4ca433ba447bc81cb,
-        type: 2}
-      propertyPath: myAnimator
-      value: 
-      objectReference: {fileID: 1485829179}
-    - target: {fileID: 114285613974188202, guid: bc5cfa70563e56c4ca433ba447bc81cb,
-        type: 2}
-      propertyPath: gem
-      value: 
-      objectReference: {fileID: 21300000, guid: e96dc01a65eb5cb43bfc15b45292a9cc,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc5cfa70563e56c4ca433ba447bc81cb, type: 2}
   m_IsPrefabAsset: 0
@@ -413,6 +413,16 @@ Prefab:
       propertyPath: m_TileColorArray.Array.data[0].m_RefCount
       value: 24
       objectReference: {fileID: 0}
+    - target: {fileID: 3664157344145760816, guid: 37514f7511ced944fb3a21a37500e805,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 13e9ecd4d1e94da40a88c2a104c2d869, type: 2}
+    - target: {fileID: 108836835344553720, guid: 37514f7511ced944fb3a21a37500e805,
+        type: 2}
+      propertyPath: m_Type
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37514f7511ced944fb3a21a37500e805, type: 2}
   m_IsPrefabAsset: 0
@@ -432,11 +442,6 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 20171704524829904, guid: bb614a057e9bdea4ca1b78163c3c4b31,
     type: 2}
   m_PrefabInternal: {fileID: 701024388}
---- !u!95 &1485829179 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 95898350450350782, guid: bc5cfa70563e56c4ca433ba447bc81cb,
-    type: 2}
-  m_PrefabInternal: {fileID: 786149914}
 --- !u!1001 &1855107842
 Prefab:
   m_ObjectHideFlags: 0

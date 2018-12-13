@@ -10,6 +10,11 @@ public class Chara : MonoBehaviour {
     public float runSpeed = 5f;
     public Animator myAnimator;
 
+    private void Awake()
+    {
+        FindObjectOfType<AudioManager>().Play("music");
+    }
+
     private void FixedUpdate()
     {
         float temp = Input.GetAxis("Horizontal");
@@ -25,7 +30,10 @@ public class Chara : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.LeftShift))
             Run();
         else
+        {
+            FindObjectOfType<AudioManager>().Play("walking");
             Walk();
+        }
     }
 
     private void Run()

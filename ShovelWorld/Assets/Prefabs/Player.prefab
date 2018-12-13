@@ -231,7 +231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dirtPile: {fileID: 21300000, guid: 456d23b3ecb01dc449da4c96bd9f6f9e, type: 3}
-  gem: {fileID: 0}
+  gem: {fileID: 21300000, guid: e96dc01a65eb5cb43bfc15b45292a9cc, type: 3}
   dirt: {fileID: 11400000, guid: 13c5102fec987d74d815b9de25a85062, type: 2}
   chara: {fileID: 1895146541293160}
   tilemap: {fileID: 0}
@@ -248,6 +248,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boundary: {fileID: 0}
   faceRight: 1
+  horizontalMove: 1
+  runSpeed: 5
+  myAnimator: {fileID: 95898350450350782}
 --- !u!212 &212135027461328898
 SpriteRenderer:
   m_ObjectHideFlags: 1
