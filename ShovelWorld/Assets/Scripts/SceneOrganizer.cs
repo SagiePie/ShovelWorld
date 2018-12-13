@@ -15,6 +15,10 @@ public class SceneOrganizer : MonoBehaviour {
         }
     }
 
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
     public void RedScene()
     {
         Initiate.Fade("_Red", Color.black, 1.0f);

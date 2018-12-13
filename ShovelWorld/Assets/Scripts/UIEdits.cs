@@ -7,7 +7,18 @@ public class UIEdits : MonoBehaviour {
 
     [Header("Icons")]
     public Sprite[] hearts;
-    public Sprite[] light;
+    public Sprite[] lights;
     public Sprite[] shovels;
 
+    public int currentLevel;
+
+    private void FixedUpdate()
+    {
+        
+    }
+
+    void HeartsCheck()
+    {
+
+    }
 }

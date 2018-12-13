@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 
 public class ShovelLogic : MonoBehaviour {
-
+    [Header("Set in Inspector")]
     public Sprite dirtPile;
     public Sprite gem;
     public Tile dirt;

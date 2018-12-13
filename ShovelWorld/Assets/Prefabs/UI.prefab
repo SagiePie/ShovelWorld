@@ -118,23 +118,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 48d4e0733f838ca4d9200298586cd07e, type: 3}
   - {fileID: 21300000, guid: a5ef62b5e452d9e4db5dbb540ea099c5, type: 3}
   - {fileID: 21300000, guid: 4222f50df128df74fb8cecc809ed7ca6, type: 3}
-  light:
-  - {fileID: 21300000, guid: a9a1a4e3311f6734489fff213f07596d, type: 3}
-  - {fileID: 21300000, guid: 2ff189d05911cbb41a1bb37e171fadba, type: 3}
-  - {fileID: 21300000, guid: 2603037e38a3d4c478200402f37ee52c, type: 3}
-  - {fileID: 21300000, guid: e8e5b9a064ce0de428d683411df4acf9, type: 3}
-  - {fileID: 21300000, guid: fe00807628a97614ebe2ba836840fef9, type: 3}
-  - {fileID: 21300000, guid: 4f37b81d7c860c1418a260e5460a7794, type: 3}
-  - {fileID: 21300000, guid: 30baaa1872e886f49811d0484e08e104, type: 3}
-  - {fileID: 21300000, guid: 607d6f07648665648a31e252629615b5, type: 3}
-  - {fileID: 21300000, guid: 7f25efe191270834eb9405424c2fdadf, type: 3}
-  - {fileID: 21300000, guid: 0c6c033ddf0a46445b53c33704df5b1c, type: 3}
-  - {fileID: 21300000, guid: 5242299a765596a4cbdbe3998b961bc2, type: 3}
-  - {fileID: 21300000, guid: b2c8f47bbe6eea04d8442c4bdf522193, type: 3}
+  lights: []
   shovels:
   - {fileID: 21300000, guid: 0b8e954131949e34687b9354bf159475, type: 3}
   - {fileID: 21300000, guid: 4309b5512d7e30045b39a1dab52c81fe, type: 3}
   - {fileID: 21300000, guid: 8473713d9eb0d2043bdf23aa4d565d01, type: 3}
+  currentLevel: 1
 --- !u!114 &114227750374255436
 MonoBehaviour:
   m_ObjectHideFlags: 1

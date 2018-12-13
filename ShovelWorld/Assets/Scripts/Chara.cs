@@ -6,10 +6,14 @@ public class Chara : MonoBehaviour {
 
     public GameObject boundary;
     public bool faceRight = true;
+    public float horizontalMove = 1f;
+    public float runSpeed = 5f;
+    public Animator myAnimator;
 
     private void FixedUpdate()
     {
         float temp = Input.GetAxis("Horizontal");
+        myAnimator.SetFloat("Speed", Mathf.Abs(temp));
 
         //flips character
         if (temp > 0 && !faceRight)
@@ -26,15 +30,15 @@ public class Chara : MonoBehaviour {
 
     private void Run()
     {
-        var x = Input.GetAxis("Horizontal") * Time.deltaTime * 3.0f;
-        var y = Input.GetAxis("Vertical") * Time.deltaTime * 3.0f;
+        var x = Input.GetAxis("Horizontal") * Time.deltaTime * horizontalMove * runSpeed;
+        var y = Input.GetAxis("Vertical") * Time.deltaTime * horizontalMove * runSpeed;
         transform.Translate(x, y, 0);
     }
 
     private void Walk()
     {
-        var x = Input.GetAxis("Horizontal") * Time.deltaTime * 1.0f;
-        var y = Input.GetAxis("Vertical") * Time.deltaTime * 1.0f;
+        var x = Input.GetAxis("Horizontal") * Time.deltaTime * horizontalMove;
+        var y = Input.GetAxis("Vertical") * Time.deltaTime * horizontalMove;
         transform.Translate(x, y, 0);
     }
 

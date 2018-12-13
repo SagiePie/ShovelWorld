@@ -20,6 +20,7 @@ Tilemap was supposed to be randomly generated, but Unity failed to comply comple
 
 Graphics created in Corel Painter 2019
     
+-------- TROUBLESHOOTING ---------
 
 -------- RESOURCES ---------
 Random Tile Generation
@@ -29,14 +30,16 @@ Random Tile Generation
 Tilemap Manipulation
     https://www.raywenderlich.com/23-introduction-to-the-new-unity-2d-tilemap-system
     
-Scene Transition
-    https://assetstore.unity.com/packages/tools/particles-effects/simple-fade-scene-transition-system-81753
-
 Lighting
     https://unionassets.com/blog/working-with-lighting-in-unity-theory-and-practice-462
     
-Sound
-    blahhh
 
 Pathfinding
     https://arongranberg.com/astar/front
+    
+-------- ASSETS ---------    
+Scene Transition
+    https://assetstore.unity.com/packages/tools/particles-effects/simple-fade-scene-transition-system-81753
+
+Sound
+    blahhh
