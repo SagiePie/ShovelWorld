@@ -25,8 +25,18 @@ Graphics created in Corel Painter 2019
 Random Tile Generation
     https://www.youtube.com/watch?v=xNqqfABXTNQ
     https://blogs.unity3d.com/2018/05/29/procedural-patterns-you-can-use-with-tilemaps-part-i/
+    
+Tilemap Manipulation
+    https://www.raywenderlich.com/23-introduction-to-the-new-unity-2d-tilemap-system
+    
+Scene Transition
+    https://assetstore.unity.com/packages/tools/particles-effects/simple-fade-scene-transition-system-81753
 
 Lighting
     https://unionassets.com/blog/working-with-lighting-in-unity-theory-and-practice-462
     
 Sound
+    blahhh
+
+Pathfinding
+    https://arongranberg.com/astar/front

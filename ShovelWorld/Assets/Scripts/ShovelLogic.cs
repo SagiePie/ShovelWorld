@@ -6,9 +6,12 @@ using UnityEngine.Tilemaps;
 public class ShovelLogic : MonoBehaviour {
 
     public Sprite dirtPile;
+    public Sprite gem;
     public Tile dirt;
     public GameObject chara;
     public Tilemap tilemap;
+
+
     private SpriteRenderer sr;
 
     //on trigger have dig animation and random pick loot

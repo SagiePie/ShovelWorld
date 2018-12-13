@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4527448020193300}
   - component: {fileID: 108636579659536404}
   m_Layer: 0
-  m_Name: Spot Light
+  m_Name: ShovelGlow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36,6 +36,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4919215744191010}
   - component: {fileID: 212135027461328898}
+  - component: {fileID: 50148976022221936}
+  - component: {fileID: 61962694280256604}
+  - component: {fileID: 111099271851275732}
+  - component: {fileID: 95898350450350782}
   m_Layer: 0
   m_Name: chara
   m_TagString: Untagged
@@ -52,7 +56,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4145733476581262}
   - component: {fileID: 114750428207567136}
-  - component: {fileID: 61960308588648818}
   - component: {fileID: 114285613974188202}
   m_Layer: 0
   m_Name: Player
@@ -102,31 +105,69 @@ Transform:
   m_Father: {fileID: 4145733476581262}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61960308588648818
+--- !u!50 &50148976022221936
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1863544652221178}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!61 &61962694280256604
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1895146541293160}
+  m_GameObject: {fileID: 1863544652221178}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.000000052154064, y: -0.11871055}
+  m_Offset: {x: 0, y: -1.2226605}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.5, y: 4.5}
+    newSize: {x: 4.5, y: 4.5}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.17686854, y: 0.07953864}
+  m_Size: {x: 1.9449329, y: 0.7772341}
   m_EdgeRadius: 0
+--- !u!95 &95898350450350782
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1863544652221178}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e69d1845fc67968408fc8ea560c52b73, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!108 &108636579659536404
 Light:
   m_ObjectHideFlags: 1
@@ -156,7 +197,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -164,6 +205,20 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!111 &111099271851275732
+Animation:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1863544652221178}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &114285613974188202
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -176,6 +231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dirtPile: {fileID: 21300000, guid: 456d23b3ecb01dc449da4c96bd9f6f9e, type: 3}
+  gem: {fileID: 0}
   dirt: {fileID: 11400000, guid: 13c5102fec987d74d815b9de25a85062, type: 2}
   chara: {fileID: 1895146541293160}
   tilemap: {fileID: 0}
@@ -191,6 +247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boundary: {fileID: 0}
+  faceRight: 1
 --- !u!212 &212135027461328898
 SpriteRenderer:
   m_ObjectHideFlags: 1
